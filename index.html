@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="style.css">
+<div class="game-container">
+    <h1>🏆 NEON DEFLECTOR 🏆</h1>
+    <p class="instructions">
+        Drag or use buttons to move your <strong>Shield (Blue)</strong>. Deflect the core back into the energy vortex! Avoid the rogue red drones.
+    </p>
+
+    <div class="scoreboard">
+        <div>Score: <span id="score-val">0</span></div>
+        <div>Shield Energy: <span id="energy-val">100%</span></div>
+    </div>
+
+    <div id="arena">
+        <svg id="vortex" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="40" fill="none" stroke="#00ffff" stroke-width="8" stroke-dasharray="15 10" />
+            <circle cx="50" cy="50" r="20" fill="rgba(0, 255, 255, 0.2)" />
+        </svg>
+
+        <div id="core"></div>
+    </div>
+
+    <div class="ipad-ui">
+        <button class="nav-btn" id="btn-left">◀ Move Left</button>
+        <button class="nav-btn" id="btn-right">Move Right ▶</button>
+    </div>
+
+    <button id="reset-btn" class="menu-btn" style="display:none;">Insert Coin / Restart</button>
+</div>
+<script src="script.js"></script>
